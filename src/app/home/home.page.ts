@@ -20,4 +20,9 @@ export class HomePage {
       this.items = data;
     });
   }
+
+  openNews(article) {
+    this.NewsService.currentNews = article;
+    this.router.navigate(["/details"]);
+  }
 }
